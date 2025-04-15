@@ -11,7 +11,7 @@ if (isNaN(ValorCompra)) {
         // Calcula o valor com 10% de desconto
         const valorComDesconto = ValorCompra - (ValorCompra * 0.1);
         // Exibe uma mensagem com o valor com desconto
-        alert("Parabéns! Você ganhou 10% de desconto. O total agora é: R$ " + valorComDesconto);
+        alert(`Parabéns! Você ganhou 10% de desconto. O total agora é: R$ ${valorComDesconto.toFixed(2)}`);
     } else {
         // Caso o valor da compra seja menor que 100, informa que não há desconto
         alert("Que pena! Você ainda não pode receber o desconto.");
