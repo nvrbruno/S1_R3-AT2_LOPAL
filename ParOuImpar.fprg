@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="ParOuImpar"/>
+        <attribute name="authors" value="DES-I1HSB"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-04-15 08:00:26 "/>
+        <attribute name="created" value="REVTLUkxSFNCO0VTTjUxMk4xMjYyODI5OzIwMjUtMDQtMDg7IjAxOjE1OjU2ICI7MjYyOA=="/>
+        <attribute name="edited" value="REVTLUkxSFNCO0VTTjUxMk4xMjYyODI5OzIwMjUtMDQtMTU7IjA4OjAwOjI2ICI7MjsyNzMz"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="NumeroUsuario" type="Integer" array="False" size=""/>
+            <comment text="Vari&#225;vel que armazena os valor que o usuario mandar ao programa"/>
+            <output expression="&quot;Escreva um n&#250;mero para saber se ele &#233; par ou impar:&quot;" newline="True"/>
+            <input variable="NumeroUsuario"/>
+            <comment text="Fun&#231;&#227;o para o programa pedir um n&#250;mero ao usuario, quando o usuario digitar, ele vai ler (armazenar) na variavel NumeroUsuario"/>
+            <if expression="NumeroUsuario MOD 2 = 0">
+                <then>
+                    <output expression="&quot;Seu n&#250;mero &#233; par!&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Seu n&#250;mero &#233; impar!&quot;" newline="True"/>
+                </else>
+            </if>
+            <comment text="Fun&#231;&#227;o &quot;SE&quot; para saber se o numero informado &#233; par ou impar, se o resto da divis&#227;o de 2 pelo o numero informado der 0 &#233; par, sen&#227;o impar, no final o programa escreve se &#233; par ou impar de acordo com essa logica.&#13;&#10;"/>
+        </body>
+    </function>
+</flowgorithm>

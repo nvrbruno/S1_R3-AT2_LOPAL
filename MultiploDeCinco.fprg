@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="NumUsuario"/>
+        <attribute name="authors" value="DES-I1HSB"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-04-15 08:00:15 "/>
+        <attribute name="created" value="REVTLUkxSFNCO0VTTjUxMk4xMjYyODI5OzIwMjUtMDQtMDg7IjAxOjQzOjUxICI7MjYyNA=="/>
+        <attribute name="edited" value="REVTLUkxSFNCO0VTTjUxMk4xMjYyODI5OzIwMjUtMDQtMTU7IjA4OjAwOjE1ICI7MzsyNzMy"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="NumUsuario" type="Integer" array="False" size=""/>
+            <comment text="Vari&#225;vel que armazena os valor que o usuario mandar"/>
+            <output expression="&quot;Escreva um n&#250;mero para saber se ele &#233; multiplo de 5&quot;" newline="True"/>
+            <input variable="NumUsuario"/>
+            <comment text="Fun&#231;&#227;o de pedir para o usuario informar um n&#250;mero para saber se ele &#233; multiplo de 5, depois armazena-la na variavel &quot;NumUsuario&quot;"/>
+            <if expression="NumUsuario MOD 5 = 0">
+                <then>
+                    <output expression="&quot;O seu n&#250;mero &#233; multiplo de 5!&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;O seu n&#250;mero n&#227;o &#233; multiplo de 5!&quot;" newline="True"/>
+                </else>
+            </if>
+            <comment text="Fun&#231;&#227;o &quot;SE&quot; para que se sobrar 0 na divis&#227;o 5 pelo o n&#250;mero informado ao programa, se sobrar 0 ele vai informar que &#233; multiplo de 5, sen&#227;o vai informar que n&#227;o &#233; multiplo de 5.&#13;&#10;"/>
+        </body>
+    </function>
+</flowgorithm>

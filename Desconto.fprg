@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Desconto"/>
+        <attribute name="authors" value="DES-I1HSB"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-04-15 08:10:44 "/>
+        <attribute name="created" value="REVTLUkxSFNCO0VTTjUxMk4xMjYyODI5OzIwMjUtMDQtMDg7IjAxOjIzOjQ1ICI7MjYyNQ=="/>
+        <attribute name="edited" value="REVTLUkxSFNCO0VTTjUxMk4xMjYyODI5OzIwMjUtMDQtMTU7IjA4OjEwOjQ0ICI7MjsyNzM0"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="ValorCompra, Desconto" type="Real" array="False" size=""/>
+            <comment text="Variave&#237;s que usadas para guardar os valores de desconto e o valor da compra&#13;&#10;"/>
+            <output expression="&quot;Digite o valor da sua compra para saber se voc&#234; tem direito ao desconto de 10%.&quot;" newline="True"/>
+            <input variable="ValorCompra"/>
+            <comment text="Fun&#231;&#227;o que pede para o usuario informar o valor da compra e depois armazena-las na variavel &quot;ValorCompra&quot;"/>
+            <assign variable="Desconto" expression="valorCompra -(ValorCompra*0.1)"/>
+            <comment text="Fun&#231;&#227;o da conta valorCompra - (ValorCompra*0.1), guardar o resultado na variavel desconto."/>
+            <if expression="ValorCompra &gt;= 100">
+                <then>
+                    <output expression="&quot;Voc&#234; tem o direito de receber 10% de desconto!! O total agora &#233;: &quot;&amp;Desconto" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;OPS! voc&#234; ainda n&#227;o esta apto para o desconto...&quot;" newline="True"/>
+                </else>
+            </if>
+            <comment text="Fun&#231;&#227;o &quot;SE&quot; a onde ele puxa a conta acima, se for maior que 100 ele informa ao usuario que ele tem direito ao desconto e informa tambem o valor final. Sen&#227;o ele informa que ele n&#227;o esta apto para receber o desconto."/>
+        </body>
+    </function>
+</flowgorithm>
